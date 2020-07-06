@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  selenium:
+    image: selenium/hub
+    ports:
+      - 4444:4444
+  chrome:
+    image: selenium/node-chrome-debug
+    depends_on:
+      - selenium
+    environment:
+      - HUB_HOST=selenium
+    ports:
+      - 5901:5900
+  test:
+    volumes:
+      - .:/SurveySparrow-BDD
+    build:
+      context: .
+      dockerfile: pytest.dockerfile
+    stdin_open: true
+    tty: true

@@ -1,0 +1,22 @@
+class Dashboard():
+    sign_in = "//a[contains(.,'Sign in')]"
+    women = "//a[@title='Women']"
+    dresses = "//ul[@class='sf-menu clearfix menu-content sf-js-enabled sf-arrows']/li[2]"
+    tshirt = "//a[@title='T-shirts']"
+    tabs = "//a[@title='{}']"
+    logo = "//a[@title='My Store']"
+    home_check = "//i[@class='icon-home']"
+    popular = "//li[contains(.,'Popular')]"
+    active = "/html/body/div/div[2]/div/div[2]/div/ul/li[1]"
+
+class Dresses():
+    dresses = "//span[@class='cat-name'][contains(.,'{}')]"
+    checkbox = "//span[@class='checked']"
+    grid = "//*[@class='selected']"
+    list = "//i[@class='icon-th-list']"
+    list_view = "//*[@class='product_list row list']"
+    list_selected = "//*[@id='list'][@class='selected']"
+    price = "//span[@itemprop='price']"
+    items = "//div[@class='product-count']"
+    summer_options = "//div[@id='left_column']/div/div/ul/li[3]"
+    summer = "//a[contains(.,'Summer Dresses')]"
