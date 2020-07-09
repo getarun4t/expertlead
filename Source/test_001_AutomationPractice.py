@@ -90,6 +90,7 @@ def details():
     driver.find_element_by_id(Form.f_name).send_keys(Environment.f_name)
     driver.find_element_by_id(Form.l_name).send_keys(Environment.l_name)
     driver.find_element_by_id(Form.password).send_keys(Environment.password)
+    wait_till_element_appears("id", Form.company, 0.1)
     driver.find_element_by_id(Form.company).send_keys(Environment.company)
     driver.find_element_by_id(Form.address_1).send_keys(Environment.address_1)
     driver.find_element_by_id(Form.city).send_keys(Environment.city)
@@ -119,6 +120,7 @@ def checkbox():
 def checkbox():
     # driver.find_element_by_xpath(Dashboard.logo).send_keys(Keys.PAGE_DOWN)
     wait_till_element_appears("xpath", Dresses.grid, 0.1)
+    wait_till_element_appears("xpath", Dresses.list, 0.1)
     assert driver.find_element_by_xpath(Dresses.grid).text == "Grid"
 
 
