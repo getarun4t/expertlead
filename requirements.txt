@@ -57,7 +57,7 @@ sure==1.4.11
 testtools==2.3.0
 traceback2==1.4.0
 unittest2==1.1.0
-virtualenv==16.7.2
+virtualenv==20.26.6
 virtualenv-clone==0.5.3
 wcwidth==0.1.7
 websocket-client==0.57.0
