@@ -61,4 +61,4 @@ virtualenv==16.7.2
 virtualenv-clone==0.5.3
 wcwidth==0.1.7
 websocket-client==0.57.0
-zipp==0.6.0
+zipp==3.19.1
